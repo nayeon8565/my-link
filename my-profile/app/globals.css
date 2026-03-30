@@ -37,14 +37,14 @@ body {
   background-size: 200% 200%;
   animation: meshShadowAnim 10s ease-in-out infinite alternate;
   filter: blur(2.5rem);
-  opacity: 0.65;
+  opacity: 0.35;
   border-radius: inherit;
-  transform: scale(1.02) translateY(5%);
+  transform: scale(1) translateY(2%);
 }
 
 @media (prefers-color-scheme: dark) {
   .mesh-shadow {
-    opacity: 0.45;
+    opacity: 0.25;
     filter: blur(3rem);
     background-color: #2a1b14;
   }
