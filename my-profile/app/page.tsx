@@ -6,7 +6,7 @@ export default function Home() {
         {/* Header / Hero Section (Glass Panel) */}
         <div className="relative z-0 rounded-[2.5rem]">
           <div className="mesh-shadow" />
-          <header className="relative z-10 overflow-hidden rounded-[2.5rem] bg-white/40 dark:bg-black/40 backdrop-blur-2xl border border-white/40 dark:border-white/10 p-10 md:p-16 transition-all duration-500">
+          <header className="relative z-10 overflow-hidden rounded-[2.5rem] bg-white/80 dark:bg-black/70 backdrop-blur-2xl border border-white/80 dark:border-white/20 p-10 md:p-16 transition-all duration-500">
             {/* Subtle inner glow */}
             <div className="absolute inset-0 bg-gradient-to-tr from-white/20 to-transparent dark:from-white/5 pointer-events-none rounded-[2.5rem]" />
             
@@ -42,7 +42,7 @@ export default function Home() {
             </h2>
             <div className="relative z-0 h-full rounded-3xl">
               <div className="mesh-shadow" />
-              <div className="relative z-10 h-full rounded-3xl bg-white/40 dark:bg-black/40 backdrop-blur-2xl border border-white/40 dark:border-white/10 p-8 hover:bg-white/50 dark:hover:bg-black/50 transition-colors duration-500">
+              <div className="relative z-10 h-full rounded-3xl bg-white/80 dark:bg-black/70 backdrop-blur-2xl border border-white/80 dark:border-white/20 p-8 hover:bg-white/50 dark:hover:bg-black/50 transition-colors duration-500">
                 <p className="text-lg leading-relaxed font-medium text-gray-800 dark:text-gray-200 opacity-90">
                   어떤 문제의 근본적인 원인을 탐구하고, 그 본질을 코드로써 재구성하는 일에 집중합니다. 투명하고 매끄러운 사용자 경험을 지향하며, 세밀한 디테일이 완성도를 만든다고 믿습니다.
                 </p>
