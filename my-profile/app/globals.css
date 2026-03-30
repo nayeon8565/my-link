@@ -10,31 +10,13 @@ body {
   padding: 0;
   font-family: var(--font-sans), sans-serif;
   color: #1a1a1a;
-  
-  /* Light mode soft gradient */
-  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fad0c4, #a18cd1, #fbc2eb);
-  background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
+  background-color: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
   body {
     color: #fcfcfc;
-    /* Dark mode deep space gradient */
-    background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #141e30, #243b55);
-    background-size: 400% 400%;
-    animation: gradientBG 15s ease infinite;
+    background-color: #000000;
   }
 }
 
-@keyframes gradientBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
