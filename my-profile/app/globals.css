@@ -10,13 +10,49 @@ body {
   padding: 0;
   font-family: var(--font-sans), sans-serif;
   color: #1a1a1a;
-  background-color: #ffffff;
+  background-color: #fdfdfd;
 }
 
 @media (prefers-color-scheme: dark) {
   body {
     color: #fcfcfc;
-    background-color: #000000;
+    background-color: #050505;
   }
 }
+
+/* 첨부된 이미지의 색상을 반영한 메쉬 그림자 */
+.mesh-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: 
+    radial-gradient(circle at 10% 10%, #fff0f0 0%, transparent 50%),
+    radial-gradient(circle at 90% 30%, #ff6b6b 0%, transparent 50%),
+    radial-gradient(circle at 30% 90%, #ffe66d 0%, transparent 60%),
+    radial-gradient(circle at 90% 90%, #ffb199 0%, transparent 50%);
+  background-color: #fff4ea; /* 베이스 톤 */
+  background-size: 200% 200%;
+  animation: meshShadowAnim 10s ease-in-out infinite alternate;
+  filter: blur(2.5rem);
+  opacity: 0.85;
+  border-radius: inherit;
+  transform: scale(1.02) translateY(5%);
+}
+
+@media (prefers-color-scheme: dark) {
+  .mesh-shadow {
+    opacity: 0.6;
+    filter: blur(3rem);
+    background-color: #2a1b14;
+  }
+}
+
+@keyframes meshShadowAnim {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 100% 100%; }
+}
+
 
