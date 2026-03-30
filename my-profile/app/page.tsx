@@ -78,12 +78,4 @@ export default function Home() {
       </div>
     </div>
   );
-}gray-700 dark:text-gray-400 opacity-70">
-            © {new Date().getFullYear()} 선인장. ALL RIGHTS RESERVED.
-          </p>
-        </footer>
-
-      </div>
-    </div>
-  );
 }
